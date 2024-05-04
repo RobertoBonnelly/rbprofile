@@ -1,6 +1,6 @@
 # RBProfile
 
-This is simply a project to show my fullstack skills. This is a simple app that contains a 10 items (for now) database of different animals. Each entry contains the common name, scientific name, a picture and a short description. The app also has a built-in image recognizer AI for detecting other known animals by man. Every image was taken from wikipedia or, in the case of the salmon, npr.org.
+This is simply a project to show my fullstack skills. This is a simple app that contains a 10 items (for now) database of different animals. Each entry contains the common name, scientific name, a picture and a brief description of the animal. The app also has a built-in image recognizer AI for detecting other known animals to man. Every image was taken from wikipedia or, in the case of the salmon, npr.org.
 
 # TO-DO List
 
