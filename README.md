@@ -8,8 +8,8 @@ This is simply a project to show my fullstack skills. This is a simple app that 
 - [x] Scaffold basic UI with mock data
 - [x] Tidy up build process
 - [x] Set up a database (Vercel Postgres)
-- [ ] Attach database to UI
-- [ ] Add authentication (Clerk)
+- [x] Attach database to UI
+- [x] Add authentication (Clerk)
 - [ ] Add image upload
 - [ ] Error management (Sentry)
 - [ ] Routing/image page (parallel route)
