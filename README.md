@@ -10,7 +10,7 @@ This is simply a project to show my fullstack skills. This is a simple app that 
 - [x] Set up a database (Vercel Postgres)
 - [x] Attach database to UI
 - [x] Add authentication (Clerk)
-- [ ] Add image upload
+- [x] Add image upload
 - [ ] Taint (server only)
 - [ ] Use Next/Image component
 - [ ] Error management (Sentry)
