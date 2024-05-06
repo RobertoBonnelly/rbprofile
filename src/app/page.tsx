@@ -1,14 +1,13 @@
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 import { db } from "~/server/db";
 
-export default async function HomePage() {
+async function Posts() {
   const posts = await db.query.posts.findMany({
     orderBy:(model, { asc }) => asc(model.id),
   });
-  
-  return (
-    <main className="">
-      <div className="flex flex-wrap gap-1">
+  return(
+    <div className="flex flex-wrap gap-1">
 
         {posts.map((image, index) => (
           <div key={image.id + "-" + index} className="flex w-48 flex-col" >
@@ -17,7 +16,19 @@ export default async function HomePage() {
           </div>
         ))}
         </div>
-      Hello, database in progress
+  );
+}
+
+export default async function HomePage() {
+  
+  return (
+    <main className="">
+      <SignedOut>
+        <div className="w-full h-full text-2xl text-center">Please sign in above</div>
+      </SignedOut>
+      <SignedIn>
+        <Posts />
+      </SignedIn>      
     </main>
   );
 }
