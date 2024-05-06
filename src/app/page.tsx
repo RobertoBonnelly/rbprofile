@@ -9,10 +9,10 @@ async function Posts() {
   return(
     <div className="flex flex-wrap gap-1">
 
-        {posts.map((image, index) => (
-          <div key={image.id + "-" + index} className="flex w-48 flex-col" >
+        {posts.map((image) => (
+          <div key={image.id} className="flex w-48 flex-col" >
             <img src={image.url} alt="image" />
-            <div><i>{image.text}</i></div>
+            <div>{image.name}</div>
           </div>
         ))}
         </div>
