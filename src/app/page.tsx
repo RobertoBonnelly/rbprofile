@@ -1,11 +1,11 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 import { db } from "~/server/db";
+import { getPosts } from "~/server/queries";
 
 async function Posts() {
-  const posts = await db.query.posts.findMany({
-    orderBy:(model, { asc }) => asc(model.id),
-  });
+  const posts = await getPosts();
+  
   return(
     <div className="flex flex-wrap gap-1">
 
