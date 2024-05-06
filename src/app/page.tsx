@@ -12,7 +12,7 @@ async function Posts() {
         {posts.map((image, index) => (
           <div key={image.id + "-" + index} className="flex w-48 flex-col" >
             <img src={image.url} alt="image" />
-            <div>{image.text}</div>
+            <div><i>{image.text}</i></div>
           </div>
         ))}
         </div>
