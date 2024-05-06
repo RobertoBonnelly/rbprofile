@@ -11,8 +11,8 @@ This is simply a project to show my fullstack skills. This is a simple app that 
 - [x] Attach database to UI
 - [x] Add authentication (Clerk)
 - [x] Add image upload
-- [ ] Taint (server only)
-- [ ] Use Next/Image component
+- [x] Taint (server only)
+- [x] Use Next/Image component
 - [ ] Error management (Sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Delete Button (Server Actions)
