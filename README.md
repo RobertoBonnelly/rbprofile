@@ -13,7 +13,7 @@ This is simply a project to show my fullstack skills. This is a simple app that 
 - [x] Add image upload
 - [x] Taint (server only)
 - [x] Use Next/Image component
-- [ ] Error management (Sentry)
+- [x] Error management (Sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Delete Button (Server Actions)
 - [ ] Analytics (Posthog)
