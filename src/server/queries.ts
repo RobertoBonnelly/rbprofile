@@ -7,3 +7,13 @@ export async function getPosts() {
       });
       return posts;
 }
+
+export async function getPost(id: number) {
+  const post = await db.query.posts.findFirst({
+    where: (model, { eq }) => eq(model.id, id),
+  });
+
+  if (!post) throw new Error("Image not found");
+
+  return post;
+}
