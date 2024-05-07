@@ -24,8 +24,8 @@ export const posts = createTable(
     id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }).notNull(),
     url: varchar("url", { length: 1024 }).notNull(),
-    text: varchar("scientific_name", { length: 64 }),
-    text1: varchar("description", { length: 1024 }),
+    text: varchar("scientific_name", { length: 64 }).notNull(),
+    text1: varchar("description", { length: 1024 }).notNull(),
     createdAt: timestamp("created_at")
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
