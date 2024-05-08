@@ -9,7 +9,7 @@ export default async function FullPageImageView(props: { id: number }) {
     </div>
 
     <div className="flex w-48 flex-shrink-0 flex-col border-l">
-        <div className="border-b text-lg text-center p-2">{post.name}</div>
+        <div className="text-lg text-center p-2">{post.name}</div>
 
         <div className="flex flex-col"><span>Scientific name: <i>{new String(post.text)}</i></span>
         </div>
