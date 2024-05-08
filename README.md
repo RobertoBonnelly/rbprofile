@@ -15,7 +15,7 @@ This is simply a project to show my fullstack skills. This is a simple app that 
 - [x] Use Next/Image component
 - [x] Error management (Sentry)
 - [x] Routing/image page (parallel route)
-- [ ] ShadUI (toasts)
-- [ ] Delete Button (Server Actions)
+- [x] ShadUI (toasts)
 - [ ] Analytics (Posthog)
+- [ ] Delete Button (Server Actions)
 - [ ] Ratelimiting (upstash)
