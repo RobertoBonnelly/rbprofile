@@ -17,4 +17,4 @@ This is simply a project to show my fullstack skills. This is a simple app that 
 - [x] Routing/image page (parallel route)
 - [x] ShadUI (toasts)
 - [x] Analytics (Posthog)
-- [ ] Ratelimiting (upstash)
+- [x] Ratelimiting (upstash)
