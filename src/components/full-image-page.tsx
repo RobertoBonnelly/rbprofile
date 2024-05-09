@@ -1,4 +1,5 @@
 import { getPost } from "~/server/queries";
+import { Button } from "./ui/button";
 
 export default async function FullPageImageView(props: { id: number }) {
   const post = await getPost(props.id);

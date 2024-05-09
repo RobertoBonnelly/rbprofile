@@ -1,5 +1,8 @@
 import "server-only";
 import { db } from "./db";
+import { auth } from "@clerk/nextjs/server";
+import { posts } from "./db/schema";
+import { eq } from "drizzle-orm";
 
 export async function getPosts() {
     const posts = await db.query.posts.findMany({
