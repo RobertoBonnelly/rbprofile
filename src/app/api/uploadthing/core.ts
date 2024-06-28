@@ -34,6 +34,7 @@ export const ourFileRouter = {
       await db.insert(posts).values({
         name: file.name,
         url: file.url,
+        userID: metadata.userId,
       })
  
       // !!! Whatever is returned here is sent to the clientside `onClientUploadComplete` callback

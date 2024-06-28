@@ -12,11 +12,19 @@ export async function getPosts() {
 }
 
 export async function getPost(id: number) {
+  const user = auth();
+  if (!user.userId) throw new Error ("Unauthorized");
+
+  
+  
   const post = await db.query.posts.findFirst({
     where: (model, { eq }) => eq(model.id, id),
   });
 
   if (!post) throw new Error("Image not found");
+
+  if (post.userID !== user.userId) throw new Error("Unauthorized");
+
 
   return post;
 }

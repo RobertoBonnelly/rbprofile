@@ -30,6 +30,7 @@ export const posts = createTable(
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
     updatedAt: timestamp("updatedAt"),
+    userID: varchar("userID", { length: 256 }).notNull(),
   },
   (example) => ({
     urlIndex: index("url_idx").on(example.url),

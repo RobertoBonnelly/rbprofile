@@ -4,7 +4,7 @@ import { SimpleUploadButton } from "./betterub";
 export function TopNav(){
     return (
       <nav className="flex items-center justify-between w-full p-4 text-xl font-semibold border-b">
-        <div>Animal Gallery</div>
+        <div>Gallery</div>
   
         <div className="flex flex-row gap-4 items-center">
             <SignedOut>
