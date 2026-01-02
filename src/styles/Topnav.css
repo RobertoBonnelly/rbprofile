@@ -1,0 +1,13 @@
+.topnav {
+    top: 20px;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(48, 47, 48);
+    border-radius: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.p-l {
+    margin-right: 5px;
+}
