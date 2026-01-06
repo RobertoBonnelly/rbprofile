@@ -4,12 +4,14 @@ import AboutMe from "./About-me/page";
 import './index.css'
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
+import LandingPage from "./e-commerce/Landing-Page";
 
 function App() {
     return (
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/About-me" element={<AboutMe />} />
+                <Route path="/E-Commerce" element={<LandingPage />} />
             </Routes>
     )
 }
