@@ -4,10 +4,32 @@
     width: 100%;
     background-color: rgb(48, 47, 48);
     border-radius: 8px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 10px;
 }
 
 .p-l {
     margin-right: 5px;
+}
+
+.auth {
+    width: fit-content;
+}
+
+.flex {
+    display: flex;
+}
+
+.LP-input {
+    background-color: rgb(20, 20, 20);
+    border: 1px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    padding-left: 10px;
+
+}
+
+.m-t {
+    margin-top: 20px;
 }
