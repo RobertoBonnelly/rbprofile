@@ -33,3 +33,13 @@
 .m-t {
     margin-top: 20px;
 }
+
+.button {
+    display: inline-block;
+    border: none;
+    background-color: rgb(20, 20, 20);
+    padding: 10px 15px;
+    margin: 1px 5px;
+    color: aliceblue;
+    border-radius: 8px;
+}

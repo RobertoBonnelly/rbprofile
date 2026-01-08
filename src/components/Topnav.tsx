@@ -3,12 +3,12 @@ import '../styles/Topnav.css'
 export default function Topnav() {
     return (
         <div className="topnav">
-            <button className='p-l'>
+            <a className='button' href='/About-me'>
                 About me
-            </button>
-            <button>
+            </a>
+            <a className='button' href='/E-Commerce'>
                 E-Commerce
-            </button>
+            </a>
         </div>
     )
 }
