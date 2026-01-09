@@ -5,6 +5,7 @@ import './index.css'
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 import LandingPage from "./e-commerce/Landing-Page";
+import HomeIcon from './assets/home.png'
 
 function App() {
     return (
@@ -16,9 +17,16 @@ function App() {
     )
 }
 
+function DashboardButton() {
+    return (
+        <a href="/"><img src={HomeIcon} className="dashboard-button" alt="Home Icon" /></a>
+    )
+}
+
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <BrowserRouter>
+            <DashboardButton />
             <App />
         </BrowserRouter>
     </StrictMode>
