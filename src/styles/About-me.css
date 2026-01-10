@@ -3,6 +3,9 @@
     text-align: justify;
     padding-left: 50px;
     padding-top: 50px;
+    display: grid;
+    place-items: center;
+    margin: 50px 400px;
 }
 
 .title {
